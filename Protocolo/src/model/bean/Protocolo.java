@@ -5,6 +5,8 @@
  */
 package model.bean;
 
+import java.sql.Date;
+
 /**
  *
  * @author Murilo
@@ -17,7 +19,7 @@ public class Protocolo {
     private String anotacoes;
     private long tipoProtocolo;;
     private long seloId;
-    private long dataCadastro;
+    private Date dataCadastro;
 
     public long getId() {
         return id;
@@ -75,11 +77,11 @@ public class Protocolo {
         this.seloId = seloId;
     }
 
-    public long getDataCadastro() {
+    public Date getDataCadastro() {
         return dataCadastro;
     }
 
-    public void setDataCadastro(long dataCadastro) {
+    public void setDataCadastro(Date dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
     
